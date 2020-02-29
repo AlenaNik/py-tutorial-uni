@@ -1,10 +1,10 @@
 command = ""
-while command.lower() != "quit":
+while True:
     command = input("> ").lower()
     if command == "start":
         print("Ready to go")
     elif command == "stop":
-        print("Stoppint the car")
+        print("Stopping the car")
     elif command == "help":
         print("""
         start - to start,
