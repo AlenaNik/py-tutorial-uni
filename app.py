@@ -1,11 +1,19 @@
-secret = 10
-guess = 0
-numOfGuess = 3
-while guess < numOfGuess:
-    res = int(input('Guess: '))
-    guess += 1
-    if res == secret:
-        print('Nice')
+command = ""
+while command.lower() != "quit":
+    command = input("> ").lower()
+    if command == "start":
+        print("Ready to go")
+    elif command == "stop":
+        print("Stoppint the car")
+    elif command == "help":
+        print("""
+        start - to start,
+        stop - top stop,
+        quit - to quit
+        """)
+    elif command == "quit":
         exit()
     else:
-        continue
+        print("Sorry no command recognized")
+
+
