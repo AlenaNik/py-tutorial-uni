@@ -1,6 +1,6 @@
-numbers = [67, 2, 3, 4, 7, 8, 1, 2, 3, 4]
-largest = numbers[0]
+numbers = [5, 2, 5, 6, 1]
+uniques = []
 for num in numbers:
-    if num > largest:
-        largest = num
-print(largest)
+    if num not in uniques:
+        uniques.append(num)
+print(uniques)
