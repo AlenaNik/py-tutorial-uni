@@ -1,11 +1,11 @@
-num = input("Phone: ")
-digits_mapping = {
-    "1": "One",
-    "2": "Two",
-    "3": "Tree"
+message = input("> ")
+words = message.split(' ')
+smiles = {
+    ":)": "🙂",
+    ":(": "😟",
+    "house": "🏡"
 }
-
 output = ""
-for ch in num:
-   output += digits_mapping.get(ch, "Doesnt exist") + " "
+for word in words:
+   output += smiles.get(word, word) + " "
 print(output)
